@@ -11,35 +11,33 @@ public class Play extends Container implements KeyListener {
 	public int Y = 10;
 	
 	public void paint (Graphics circle){
-		X = 20;
-		Y = 20;
+		
 		circle.drawOval(X, Y, X, Y);
 	}
 
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 		if (arg0.getKeyCode() == 39) {
-			System.out.print("");
 			X++;
+			repaint();
 		}
 		if (arg0.getKeyCode() == 37){
-			System.out.print("");
 			X--;
+			repaint();
 		}
 		if (arg0.getKeyCode() == 40) {
-			System.out.print("");
 			Y++;
+			repaint();
 		}
 		if (arg0.getKeyCode() == 38){
-			System.out.print("");
 			Y--;
+			repaint();
 		}
 		
 	}
 
 	@Override
 	public void keyReleased(KeyEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
